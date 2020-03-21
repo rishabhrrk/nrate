@@ -60,7 +60,7 @@ class App extends React.Component {
 
   handleclick(e){
     e.preventDefault();
-    var u = "http://localhost:5000/api/courses/"+this.state.price+"/"+this.state.cost+"/"+this.state.radio1+this.state.radio2+this.state.radio5
+    var u = "http://167.99.224.63:5000/api/courses/"+this.state.price+"/"+this.state.cost+"/"+this.state.radio1+this.state.radio2+this.state.radio5
     axios.get(u).then(response => {
       if(response.data.total)
       this.setState({nrate: response.data.total})

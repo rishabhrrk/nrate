@@ -2,7 +2,6 @@
   "name": "nrate",
   "version": "0.1.0",
   "private": true,
-  "proxy": "167.99.224.63:5000",
   "homepage": "https://rishabhrrk.github.io/nrate",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

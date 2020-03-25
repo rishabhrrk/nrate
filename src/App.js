@@ -60,10 +60,12 @@ class App extends React.Component {
 
   handleclick(e){
     e.preventDefault();
-    var u = "https://cors-anywhere.herokuapp.com/http://167.99.224.63:5000/api/courses/"+this.state.price+"/"+this.state.cost+"/"+this.state.radio1+this.state.radio2+this.state.radio5
+    // var u = "https://cors-anywhere.herokuapp.com/http://167.99.224.63:5000/api/courses/"+this.state.price+"/"+this.state.cost+"/"+this.state.radio1+this.state.radio2+this.state.radio5
+    var u = "https://fast-bayou-21097.herokuapp.com/"+this.state.price+"/"+this.state.cost+"/"+this.state.radio1+this.state.radio2+this.state.radio5
     axios.get(u).then(response => {
-      if(response.data.total)
-      this.setState({nrate: response.data.total})
+      console.log(response)
+      if(response.data)
+      this.setState({nrate: response.data})
       else
       this.setState({nrate: "Not correct selection"})
     })

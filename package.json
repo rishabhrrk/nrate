@@ -2,7 +2,7 @@
   "name": "nrate",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rishabhrrk.github.io/nrate",
+  "homepage": "https://rishabhrrk.github.io/nrate/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

@@ -2,17 +2,10 @@ import React, { Components } from "react";
 
 const display = props => {
   return (
-    <div className="row">
-      <label className="control-label col-sm-2">
-        <h5>N Rate</h5>
+    <div className="row form-group" style={{margin:"0"}}>
+      <label className="control-label col-form-label" style={{paddingTop:"30px", paddingLeft:"10px"}}>
+        {props.nrate!="Not correct selection" ? <h5>Maximum Return To N = {props.nrate}</h5> : <h5>{props.nrate}</h5>}
       </label>
-      <div className="form-group mx-sm-1 mb-1">
-        <input
-          type="number"
-          className="form-control"
-          id="exampleFormControlTextarea1"
-        />
-      </div>
     </div>
   );
 };

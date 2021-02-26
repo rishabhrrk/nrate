@@ -5,20 +5,16 @@ import "./App.css";
 import Nav from "./Components/navbar";
 import Foot from "./Components/footer";
 import Region from "./Components/region";
-import Cultivator from "./Components/cultivator";
-import CropRotation from "./Components/cropRotation";
 import OrganicMatter from "./Components/organicMatter";
 import CoverCrop from "./Components/coverCrop";
 import Price from "./Components/price";
 import Cost from "./Components/cost";
-import Display from "./Components/display";
+import Display from "./Components/display"
 
 class App extends React.Component {
   state = {
     radio1: "1",
     radio2: "1",
-    // radio3: "o1",
-    // radio4: "o1",
     radio5: "1",
     price: 0,
     cost: 0,
@@ -50,8 +46,6 @@ class App extends React.Component {
     this.setState({
       radio1: "1",
       radio2: "1",
-      // radio3: "o1",
-      // radio4: "o1",
       radio5: "1",
       price: 0,
       cost: 0
@@ -60,7 +54,6 @@ class App extends React.Component {
 
   handleclick(e){
     e.preventDefault();
-    // var u = "https://cors-anywhere.herokuapp.com/http://167.99.224.63:5000/api/courses/"+this.state.price+"/"+this.state.cost+"/"+this.state.radio1+this.state.radio2+this.state.radio5
     var u = "https://fast-bayou-21097.herokuapp.com/"+this.state.price+"/"+this.state.cost+"/"+this.state.radio1+this.state.radio2+this.state.radio5
     axios.get(u).then(response => {
       console.log(response)
@@ -74,7 +67,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container" style={{height:"700px", 
+      borderStyle:"solid", borderColor:"cadetblue", position: "relative", width:"700px", backgroundColor:"white"}}>
         <Nav />
         <form className="form-horizontal">
           <div className="form-group">
@@ -86,26 +80,18 @@ class App extends React.Component {
               onCheckChangeRadio2={this.onCheckChangeRadio2}
               radio2={this.state.radio2}
             />
-            {/* <CropRotation
-              onCheckChangeRadio3={this.onCheckChangeRadio3}
-              radio3={this.state.radio3}
-            />
-            <Cultivator
-              onCheckChangeRadio4={this.onCheckChangeRadio4}
-              radio4={this.state.radio4}
-            /> */}
             <CoverCrop
               onCheckChangeRadio5={this.onCheckChangeRadio5}
               radio5={this.state.radio5}
             />
             <Price onPriceChange={this.onPriceChange} price={this.state.price}/>
             <Cost onCostChange={this.onCostChange} cost={this.state.cost}/>
-            {/* <Display /> */}
-            <div className="row">
+            {/* <div className="row">
               <label className="control-label col-sm-2">
                   <h5>N Rate {this.state.nrate}</h5>
               </label>
-            </div>
+            </div> */}
+            {this.state.nrate!="" && <Display nrate={this.state.nrate} />}
             <button className="btn btn-primary btn-lg m-3" onClick={(e) => {this.handleclick(e)}}>Calculate</button>
             <button className="btn btn-primary btn-lg m-3" onClick={this.onReset}>
               Reset

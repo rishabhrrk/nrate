@@ -2,7 +2,7 @@ import React, { Components } from "react";
 
 const region = props => {
   return (
-    <div className="row">
+    <div className="row-vertical">
       <label className="control-label col-sm-2">
         <h5>Select Region</h5>
       </label>

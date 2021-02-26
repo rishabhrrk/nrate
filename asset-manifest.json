@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nrate/static/css/main.ffe82943.chunk.css",
-    "main.js": "/nrate/static/js/main.222bd687.chunk.js",
-    "main.js.map": "/nrate/static/js/main.222bd687.chunk.js.map",
+    "main.js": "/nrate/static/js/main.fa9e1846.chunk.js",
+    "main.js.map": "/nrate/static/js/main.fa9e1846.chunk.js.map",
     "runtime-main.js": "/nrate/static/js/runtime-main.3071055d.js",
     "runtime-main.js.map": "/nrate/static/js/runtime-main.3071055d.js.map",
     "static/css/2.89f067aa.chunk.css": "/nrate/static/css/2.89f067aa.chunk.css",
     "static/js/2.eba6c4fd.chunk.js": "/nrate/static/js/2.eba6c4fd.chunk.js",
     "static/js/2.eba6c4fd.chunk.js.map": "/nrate/static/js/2.eba6c4fd.chunk.js.map",
     "index.html": "/nrate/index.html",
-    "precache-manifest.76de9ed07bfa6e0710569e4df682bd1b.js": "/nrate/precache-manifest.76de9ed07bfa6e0710569e4df682bd1b.js",
+    "precache-manifest.bb156ae8fe623509b04791d4821963bd.js": "/nrate/precache-manifest.bb156ae8fe623509b04791d4821963bd.js",
     "service-worker.js": "/nrate/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/nrate/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.ffe82943.chunk.css.map": "/nrate/static/css/main.ffe82943.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.89f067aa.chunk.css",
     "static/js/2.eba6c4fd.chunk.js",
     "static/css/main.ffe82943.chunk.css",
-    "static/js/main.222bd687.chunk.js"
+    "static/js/main.fa9e1846.chunk.js"
   ]
 }
